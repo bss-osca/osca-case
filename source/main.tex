@@ -1,0 +1,121 @@
+%% -------------------------------------------------------------------------------------------------
+%% Customize the header, footer and title
+%% -------------------------------------------------------------------------------------------------
+\newcommand{\notetitle}{Case}
+% \newcommand{\dept}{DEPARTMENT OF ECONOMICS AND BUSINESS ECONOMICS}
+% \newcommand{\faculty}{BUSINESS AND SOCIAL SCIENCES}
+% \newcommand{\person}{}
+% \newcommand{\email}{larsrn@econ.au.dk}
+
+\newcommand{\company}{Brics\xspace}
+
+\author{Lars Relund Nielsen, Sune L. Gadegaard, Hartanto Wijaya Wong and Ata Jalili Marand}
+\title{The Fit Stop}
+% \date{}
+%% -------------------------------------------------------------------------------------------------
+
+
+\documentclass[11pt]{article}
+%\usepackage[top=4cm, bottom=4cm, left=3cm, right=3cm]{geometry}
+\usepackage{a4wide}
+\usepackage[scaled=0.95]{helvet}  % Use helvetica as sans serif font and scale it down to 0.95%
+\renewcommand{\familydefault}{\sfdefault} % Helvetica as default font
+
+\usepackage[final,				% Activates microtype
+stretch = 10,		% decreases the amount of word stretches allowed. Increase readability
+shrink	=10,		% decreases the amount of word shrinkage allowed. Increase readability
+tracking = true%
+]{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,xspace}
+\usepackage{amsfonts,mathtools}
+\mathtoolsset{showonlyrefs}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{{graphic/}}
+\usepackage{tabularx,rotating,subfig}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+% \usepackage[small,compact]{titlesec}
+% \usepackage{pdflscape}
+\usepackage[pdftex,colorlinks=false,linkcolor=blue,breaklinks=true, hidelinks]{hyperref}  %,hidelinks
+
+%% -------------------------------------------------------------------------------------------------
+%% Header and footer
+%% -------------------------------------------------------------------------------------------------
+\usepackage{fancyhdr}
+%\footskip40pt
+%\renewcommand\headrulewidth{0.5 pt}
+%\renewcommand\footrulewidth{0.5 pt}
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\lhead{\notetitle}
+\chead{}
+\rhead{\person}
+\rfoot{}
+\cfoot{\thepage}
+\lfoot{}
+%% -------------------------------------------------------------------------------------------------
+
+
+%% ---------------------------------------------------------------------
+%% Makes the title, abstract and keywords left aligned 
+%% Authors must be separated with \\ in \author
+%% ---------------------------------------------------------------------
+\makeatletter
+\def\@maketitle{%
+	\newpage
+	\null
+	\vskip 2em%
+	\let \footnote \thanks
+	{\Large\bfseries\noindent\@title\par}%
+	\vskip 1.5em%
+	{\large
+		\lineskip .5em%
+		\raggedright\@author}
+	\vskip 1em%
+	{\noindent\small\@date}%
+	\par
+	\vskip 1.5em}
+\makeatother
+
+%% Redefine abstract environment so left justified
+% \renewenvironment{abstract}{\parindent0pt\textbf{Abstract:}}{}
+% \newcommand{\keywords}[1]{Keywords: #1}
+%% ---------------------------------------------------------------------
+
+
+
+%% -------------------------------------------------------------------------------------------------
+%% Set indent and skip
+%% -------------------------------------------------------------------------------------------------
+\parindent=0pt%
+\parskip=0.5em%
+%% -------------------------------------------------------------------------------------------------
+
+
+%% Include answer or not
+\newif\ifAnswer
+\Answertrue
+\Answerfalse
+
+
+\begin{document}
+
+\maketitle
+
+[General desc]
+
+\company is 
+
+\section{Inventory }
+
+\section{Supply chain network}
+
+\section{Exercises}
+
+\subsection{Exercise (data ...)}
+
+\subsection{Exercise (data ...)}
+
+\end{document}
