@@ -1,0 +1,28 @@
+\documentclass[english,unit=imfau]{aultrdesign} 
+\usepackage{babel}
+\begin{document}
+\begin{ColophonData}
+  \signature{Lars Madsen}
+  \casenumber{1234}
+  \reference{lm}
+\end{ColophonData}
+
+% use this to record the text for the information area, i.e. the area
+% similar to the receiver address area in an ordinary letter
+\begin{InformationArea}
+  \faxreceiver{Lars Madsen}
+  \receiverfaxnumber{+99 12345678}
+  \numberofpagesinfax{5}
+\end{InformationArea}
+
+\begin{fax}
+
+\opening{Regarding your request}
+
+The data is included in the following pages.
+
+\closing{Regards,}
+
+\end{fax}
+
+\end{document}

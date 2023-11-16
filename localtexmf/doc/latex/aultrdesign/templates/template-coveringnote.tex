@@ -1,0 +1,44 @@
+\documentclass[danish,unit=imfau]{aultrdesign}
+\usepackage{babel}
+\begin{document}
+\begin{ColophonData}
+  \firstname{Lars}
+  \lastname{Madsen}
+  \usertitle{Programm\o r}
+  \userbranch{IT Staben} % overwrites the data from the unit
+\end{ColophonData}
+
+% use this to record the text for the information area, i.e. the area
+% similar to the receiver address area in an ordinary letter
+\begin{InformationArea}
+  Lars Madsen\\
+  MATH
+\end{InformationArea}
+
+\begin{coveringnote}
+
+\opening{Vedr. laptop}
+
+% a three column list, each item will print an open box, using
+% \item[x] you can mark this item with an x
+\begin{coveringnotelist}
+\item[x] If\o lge aftale
+\item Til orientering
+\item Til godkendelse
+\item Til kommentering
+\item Til videre foranstaltning
+\item Til underskrift
+\item Ring venligst
+\item Kan beholdes
+\item \O nskes retur
+\item Tak for l\aa n
+\end{coveringnotelist}
+
+Maskinen er installeret med Fedora 17, du er oprettet som bruger med
+dit almindelige brugernavn og password.
+
+\closing{Mvh.}
+
+\end{coveringnote}
+
+\end{document}

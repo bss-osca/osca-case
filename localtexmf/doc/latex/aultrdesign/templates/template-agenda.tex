@@ -1,0 +1,44 @@
+\documentclass[english,unit=imfau]{aultrdesign}
+\usepackage{babel}
+\usepackage{lipsum}
+ 
+\begin{document}
+
+% this environment does notthing at all, but can be used to provide a
+% better structure for your document
+\begin{ColophonData}
+  \firstname{Lars}
+  \lastname{Madsen}
+  \usertitle{Programmer}
+  \casenumber{1234}
+  \reference{lm}
+\end{ColophonData}
+
+\begin{InformationArea}
+  \meetingdate{\today}
+  \meetingplace{1530.221, IMF A2.21}
+  \meetingtopic{General assembly}
+  % this list may be long, so an environment might be better
+  \begin{participants}
+    daleif, daleif2
+  \end{participants}
+\end{InformationArea}
+
+
+\begin{agenda}
+
+% if the agenda is quite long you can use this to add a tble of
+% contents, it will list the \section's
+%\tableofcontents 
+
+\section{Budget}
+
+Discussion of the budget for the coming year.
+
+\section{Misc.}
+
+Miscellaneous.
+
+\end{agenda}
+\end{document}
+

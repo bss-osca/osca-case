@@ -1,0 +1,32 @@
+\documentclass[english,unit=imfau]{aultrdesign}
+\usepackage{babel}
+\usepackage{kantlipsum} % sample filling text discard in real life
+\begin{document}
+\begin{ColophonData}
+  \firstname{Lars}
+  \lastname{Madsen}
+  \usertitle{Programmer}
+  \casenumber{1234}
+  \reference{lm}
+  \userbranch{IT Department}
+\end{ColophonData}
+
+% use this to record the text for the information area, i.e. the area
+% similar to the receiver address area in an ordinary letter
+\begin{InformationArea}
+  \memoreceiver{Lars Madsen, N.N}
+\end{InformationArea}
+
+\begin{memo}
+
+\opening{Regarding\dots}
+
+\kant[1-2] % sample text
+
+\closing{Regards,}
+
+\end{memo}
+
+\end{document}
+
+

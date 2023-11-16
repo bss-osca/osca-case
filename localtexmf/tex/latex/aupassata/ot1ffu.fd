@@ -1,0 +1,56 @@
+%Filename: ot1ffu.fd
+%Created by: tex t
+%Created using fontinst v1.929
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1ffu.fd}
+   [2009/01/05 Fontinst v1.929 font definitions for OT1/ffu.]
+
+\DeclareFontFamily{OT1}{ffu}{}
+
+\DeclareFontShape{OT1}{ffu}{m}{n}{
+   <-> ffur7t
+}{}
+
+\DeclareFontShape{OT1}{ffu}{m}{sc}{
+   <-> ffurc7t
+}{}
+
+\DeclareFontShape{OT1}{ffu}{m}{sl}{
+   <-> ffuro7t
+}{}
+
+\DeclareFontShape{OT1}{ffu}{b}{n}{
+   <-> ffub7t
+}{}
+
+\DeclareFontShape{OT1}{ffu}{b}{sc}{
+   <-> ffubc7t
+}{}
+
+\DeclareFontShape{OT1}{ffu}{b}{sl}{
+   <-> ffubo7t
+}{}
+
+\DeclareFontShape{OT1}{ffu}{l}{n}{
+   <-> fful7t
+}{}
+
+\DeclareFontShape{OT1}{ffu}{l}{sc}{
+   <-> ffulc7t
+}{}
+
+\DeclareFontShape{OT1}{ffu}{l}{sl}{
+   <-> ffulo7t
+}{}
+
+\DeclareFontShape{OT1}{ffu}{m}{it}{<->ssub * ffu/m/sl}{}
+\DeclareFontShape{OT1}{ffu}{bx}{n}{<->ssub * ffu/b/n}{}
+\DeclareFontShape{OT1}{ffu}{bx}{sc}{<->ssub * ffu/b/sc}{}
+\DeclareFontShape{OT1}{ffu}{bx}{sl}{<->ssub * ffu/b/sl}{}
+\DeclareFontShape{OT1}{ffu}{b}{it}{<->ssub * ffu/b/sl}{}
+\DeclareFontShape{OT1}{ffu}{bx}{it}{<->ssub * ffu/b/it}{}
+\DeclareFontShape{OT1}{ffu}{l}{it}{<->ssub * ffu/l/sl}{}
+
+\endinput

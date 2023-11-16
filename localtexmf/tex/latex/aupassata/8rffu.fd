@@ -1,0 +1,43 @@
+%Filename: 8rffu.fd
+%Created by: tex t
+%Created using fontinst v1.929
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{8rffu.fd}
+   [2009/01/05 Fontinst v1.929 font definitions for 8r/ffu.]
+
+\DeclareFontFamily{8r}{ffu}{}
+
+\DeclareFontShape{8r}{ffu}{m}{n}{
+   <-> ffur8r
+}{}
+
+\DeclareFontShape{8r}{ffu}{m}{sl}{
+   <-> ffuro8r
+}{}
+
+\DeclareFontShape{8r}{ffu}{b}{n}{
+   <-> ffub8r
+}{}
+
+\DeclareFontShape{8r}{ffu}{b}{sl}{
+   <-> ffubo8r
+}{}
+
+\DeclareFontShape{8r}{ffu}{l}{n}{
+   <-> fful8r
+}{}
+
+\DeclareFontShape{8r}{ffu}{l}{sl}{
+   <-> ffulo8r
+}{}
+
+\DeclareFontShape{8r}{ffu}{m}{it}{<->ssub * ffu/m/sl}{}
+\DeclareFontShape{8r}{ffu}{bx}{n}{<->ssub * ffu/b/n}{}
+\DeclareFontShape{8r}{ffu}{bx}{sl}{<->ssub * ffu/b/sl}{}
+\DeclareFontShape{8r}{ffu}{b}{it}{<->ssub * ffu/b/sl}{}
+\DeclareFontShape{8r}{ffu}{bx}{it}{<->ssub * ffu/b/it}{}
+\DeclareFontShape{8r}{ffu}{l}{it}{<->ssub * ffu/l/sl}{}
+
+\endinput

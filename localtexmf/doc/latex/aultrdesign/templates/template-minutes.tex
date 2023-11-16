@@ -1,0 +1,54 @@
+\documentclass[english,unit=imfau]{aultrdesign}
+\usepackage{babel}
+\begin{document}
+
+% this environment does notthing at all, but can be used to provide a
+% better structure for your document
+\begin{ColophonData}
+  \firstname{Lars}
+  \lastname{Madsen}
+  \usertitle{Programmer}
+  \casenumber{1234}
+  \reference{lm}
+\end{ColophonData}
+
+\begin{InformationArea}
+  \meetingdate{February 30, 2009}
+  \meetingplace{1530.221, MATH A2.21}
+  \meetingtopic{General assembly}
+  % this list may be long, so an environment might be better
+  \begin{present}
+    daleif, daleif2
+  \end{present}
+  \begin{absent}
+    daleif
+  \end{absent}
+\end{InformationArea}
+
+
+\begin{minutes}
+
+% if the agenda is quite long you can use this to add a tble of
+% contents, it will list the \section's
+%\tableofcontents 
+
+\section{Budget}
+
+The budget was discussed. daleif2 expressed his concerns about whether
+the cost of the conference was a bit optimistic.
+
+daleif replied that the offer has been verified and that the
+department would cover any deficit within limits.
+
+
+\section{Misc.}
+
+There has been an offer to record all lectures, and published them
+on-line. There was a general agreement to accept the offer.
+
+
+\closing{}
+
+\end{minutes}
+\end{document}
+
